@@ -25,3 +25,7 @@ fi
 
 echo "Linking new .gitconfig file"
 ln -sv "$PWD/dotfiles/.gitconfig" ~ > /dev/null
+
+# Custom oh-my-zsh file
+echo "Installing custom oh-my-zsh file"
+mv $PWD/oh-my-zsh/russell.zsh-theme /home/russellkir/.oh-my-zsh/themes/af-magic.zsh-theme
