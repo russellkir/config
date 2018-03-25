@@ -1,0 +1,11 @@
+[user]
+	name = Russell Kirmayer
+	email = russellkir@gmail.com
+[core]
+	editor = vim
+    excludesfile =~/.gitignore
+[web]
+    browser = google-chrome
+[alias]
+    st = status
+    cm = commit -m
