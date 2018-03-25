@@ -9,3 +9,4 @@
 [alias]
     st = status
     cm = commit -m
+    pow = push origin master
