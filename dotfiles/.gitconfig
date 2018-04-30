@@ -1,6 +1,6 @@
 [user]
 	name = Russell Kirmayer
-	email = russellkir@gmail.com
+	email = russell.kirmayer@oden.io
 [core]
 	editor = vim
     excludesfile =~/.gitignore
@@ -9,4 +9,4 @@
 [alias]
     st = status
     cm = commit -m
-    pow = push origin master
+    pom = push origin master
