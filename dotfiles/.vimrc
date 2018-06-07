@@ -5,7 +5,10 @@ set number
 
 " Proper spacing and formatting
 set tabstop=4
+set shiftwidth=4
 set expandtab
+set smartindent
+set autoindent
 
 " Ignore compiled files
 set wildignore=*.0,*~,*.pyc
