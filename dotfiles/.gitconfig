@@ -1,8 +1,8 @@
 [user]
-	name = Russell Kirmayer
-	email = russellkir@gmail.com
+    name = Russell Kirmayer
+    email = russellkir@gmail.com
 [core]
-	editor = vim
+    editor = vim
     excludesfile =~/.gitignore
 [web]
     browser = google-chrome
