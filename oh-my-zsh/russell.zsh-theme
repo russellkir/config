@@ -5,6 +5,7 @@ local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
 # primary prompt
 PROMPT='$FG[237]------------------------------------------------------------%{$reset_color%}
+$FG[237]$(date +"%m/%d-%H:%M")%{$reset_color%} \
 $FG[032]%~\
 $(git_prompt_info) \
 $FG[133]%(!.#.$)%{$reset_color%} '
