@@ -1,15 +1,17 @@
 [user]
-    name = Russell Kirmayer
-    email = russellkir@gmail.com
+	name = Russell Kirmayer
+	email = russell.kirmayer@oden.io
 [core]
     editor = vim
     excludesfile =~/.gitignore
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [web]
     browser = google-chrome
 [alias]
     st = status
     cm = commit -m
     pom = push origin master
+	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [color "branch"]
     current = yellow bold
     local = green bold
@@ -24,3 +26,10 @@
     added = green bold
     changed = yellow bold
     untracked = red bold
+[branch]
+	autosetuprebase = always
+[pull]
+	rebase = true
+	default = current
+[push]
+	default = current
