@@ -5,7 +5,6 @@ local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
 # primary prompt
 PROMPT='$FG[237]------------------------------------------------------------%{$reset_color%}
-$FG[237]$(date +"%m/%d-%H:%M")%{$reset_color%} \
 $FG[032]%~\
 $(git_prompt_info) \
 $FG[133]%(!.#.$)%{$reset_color%} '
@@ -20,7 +19,7 @@ eval my_orange='$FG[133]'
 # right prompt
 if type "virtualenv_prompt_info" > /dev/null
 then
-	RPROMPT='$(virtualenv_prompt_info)$my_gray%{$reset_color%}%'
+	RPROMPT='$(virtualenv_prompt_info)$my_gray$(date +"%m/%d-%H:%M")%{$reset_color%}%'
 else
 	RPROMPT='$my_gray%n@%m%{$reset_color%}%'
 fi
