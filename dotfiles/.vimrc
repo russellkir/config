@@ -31,6 +31,7 @@ set showmatch
 
 " Enable syntax highlighting
 syntax enable
+set syntax=whitespace
 
 " Enable 256 colors palette in Gnome Terminal
 if $COLORTERM == 'gnome-terminal'
@@ -56,5 +57,10 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
-" Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+set cursorcolumn
+set cursorline
+autocmd InsertEnter * highlight CursorLine guifg=white guibg=blue ctermfg=white ctermbg=blue
+autocmd InsertLeave * highlight CursorLine guifg=white guibg=darkblue ctermfg=None ctermbg=None
+
+set listchars=tab:>-,trail:-
+set list
