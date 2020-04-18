@@ -28,4 +28,4 @@ ln -sv "$PWD/dotfiles/.gitconfig" ~ > /dev/null
 
 # Custom oh-my-zsh file
 echo "Installing custom oh-my-zsh file"
-cp $PWD/oh-my-zsh/russell.zsh-theme /home/russellkir/.oh-my-zsh/themes/af-magic.zsh-theme
+cp $PWD/oh-my-zsh/russell.zsh-theme /Users/russellkir/.oh-my-zsh/themes/af-magic.zsh-theme
